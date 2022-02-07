@@ -19,7 +19,11 @@ let todoText = await driver.findElement(By.xpath("//li[last()]")).getText().then
     return value
 });
 
+//assert using node assertion
 assert.strictEqual(todoText,"Learn Selenium");
+
+//assert using chai should 
+todoText.should.equal("Learn Selenium");
 
 // close the browser 
 await driver.quit();
