@@ -26,7 +26,7 @@ describe("add todo tests", function () {
         todoText.should.equal("Learn Selenium");
 
         // close the browser 
-        await driver.quit();
+        await driver.quit(); 
 
     });
 
